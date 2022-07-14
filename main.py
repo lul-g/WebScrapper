@@ -22,18 +22,15 @@ def send_email(new_job):
     to_addr = 'lulsegedwork@gmail.com'
     subject = 'New JOB list'
     body = 'WAZZZAAA OOOOOUUUUIIIII'
-
     # make message
     msg = EmailMessage()
     msg['Subject'] = subject
     msg['From'] = from_addr
     msg['To'] = to_addr
-    # msg.set_content(body)
 
     with open(f'Jobs/{new_job}', 'r') as f:
         data = f.read()
         msg.set_content(data)
-
     # send
     with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
         smtp.login(from_addr, 'ltzosxbrtgcneldo')
