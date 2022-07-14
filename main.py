@@ -13,10 +13,7 @@ url = requests.get('https://www.timesjobs.com/candidate/job-search.html?searchTy
 soup = BeautifulSoup(url, 'lxml')
 
 
-# lulwork
-# ibpvoxbvkvdascef
-
-# lulgirma10
+# girma0
 # ltzosxbrtgcneldo
 
 def send_email(new_job):
